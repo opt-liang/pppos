@@ -74,7 +74,7 @@ void example_do_connect(mqtt_client_t *client)
      to establish a connection with the server. 
      For now MQTT version 3.1.1 is always used */
   ip4_addr_t ipaddr;
-  IP4_ADDR( &ipaddr, 39,108,231,83 );
+  IP4_ADDR( &ipaddr, 192,168,0,1 );
   err = mqtt_client_connect(client, &ipaddr, MQTT_PORT, mqtt_connection_cb, 0, &ci);
   
   if(err != ERR_OK) {
